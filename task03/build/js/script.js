@@ -1,1 +1,5 @@
-"use strict";$(function(){console.log("jquery test")});
+'use strict';
+
+$(function () {
+  console.log('jquery test');
+});

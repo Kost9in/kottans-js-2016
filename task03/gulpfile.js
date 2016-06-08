@@ -3,7 +3,7 @@
 
 /* files */
 lessFiles = ['./src/less/*.less'];
-cssFiles = ['./src/css/*.css'];
+cssFiles = [];
 jsFiles = ['./node_modules/jquery/dist/jquery.min.js', './src/js/*.js'];
 htmlFiles = ['./src/*.html'];
 imgFiles = ['./src/img/*'];
@@ -11,7 +11,7 @@ fontsFiles = ['./node_modules/font-awesome/fonts/*'];
 anotherFiles = [];
 
 /* minify css and js */
-const MINIFY = true;
+const MINIFY = false;
 
 /* ---------- END CONFIG ---------- */
 
@@ -27,7 +27,6 @@ const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const webpack = require('webpack');
 
 /* PostCSS processors */
 var processors = [

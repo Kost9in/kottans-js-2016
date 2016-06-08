@@ -1,0 +1,130 @@
+@media (max-width: 1000px) {
+  /* header */
+  .header {
+    padding: 40px 0;
+  }
+  .header .logo img {
+    width: 180px;
+  }
+  /* main */
+  .main {
+    margin-bottom: 90px;
+  }
+  .main .order-info-wrapper {
+    display: block;
+  }
+  .main .order-info-wrapper .order-info {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 2px solid #c9d0e1;
+  }
+  .main .order-info-wrapper .contacts {
+    width: 100%;
+  }
+  /* footer */
+  .footer {
+    padding: 60px 0;
+  }
+  .footer .what-we-do,
+  .footer .main-office,
+  .footer .connect {
+    width: 200px;
+  }
+  .footer .logo {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  /* header */
+  .header {
+    padding: 30px 0;
+  }
+  .header .back,
+  .header .sign-in {
+    padding: 10px 0;
+    width: 130px;
+    font-size: 14px;
+  }
+  .header .back i,
+  .header .sign-in i {
+    margin-right: 7px;
+  }
+  .header .logo img {
+    width: 100px;
+  }
+  /* main */
+  .main {
+    margin-bottom: 70px;
+  }
+  .main .order-info-wrapper .order-info {
+    display: block;
+  }
+  .main .order-info-wrapper .order-info .your-order {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .main .order-info-wrapper .order-info .order-actions {
+    width: 100%;
+  }
+  /* footer */
+  .footer {
+    padding: 40px 0;
+  }
+  .footer .wrapper {
+    display: block;
+  }
+  .footer .what-we-do,
+  .footer .main-office,
+  .footer .connect {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer .connect {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  /* header */
+  .header {
+    padding: 20px 0;
+  }
+  .header .back,
+  .header .sign-in {
+    padding: 7px 0;
+    width: 90px;
+    font-size: 11px;
+  }
+  .header .back i,
+  .header .sign-in i {
+    margin-right: 5px;
+  }
+  .header .logo img {
+    width: 70px;
+  }
+  /* main */
+  .main {
+    margin-bottom: 50px;
+  }
+  .main .order-info-wrapper .order-info .your-order {
+    margin-bottom: 20px;
+  }
+  .main .order-info-wrapper .order-info .your-order .title {
+    margin-bottom: 20px;
+  }
+  .main .order-info-wrapper .order-info .your-order .title i {
+    margin-right: 5px;
+  }
+  .main .order-info-wrapper .order-info .your-order ul {
+    display: block;
+  }
+  .main .order-info-wrapper .order-info .your-order ul li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .main .order-info-wrapper .order-info .your-order ul li:last-child {
+    margin-bottom: 0;
+  }
+  .main .order-info-wrapper .order-info .your-order ul li .head {
+    margin-bottom: 2px;
+  }
+}
