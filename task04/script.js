@@ -28,5 +28,5 @@
 })();
 
 const test1 = Object.deepAssign(null); // {}
-const test2 = Object.deepAssign(null, test1, { answer: 42, delorean: new Date(1985, 9, 26) }); // { answer: 42, delarean: Date(1985, 9, 26) }
-const test3 = Object.deepAssign({}, test2, { delorean: new Date(2015, 9, 21) }); // { answer: 42, delarean: Date(2015, 9, 21) }
+const test2 = Object.deepAssign(null, test1, { answer: 42, delorean: new Date(1985, 9, 26) }); // { answer: 42, delorean: Date(1985, 9, 26) }
+const test3 = Object.deepAssign({}, test2, { delorean: new Date(2015, 9, 21) }); // { answer: 42, delorean: Date(2015, 9, 21) }
