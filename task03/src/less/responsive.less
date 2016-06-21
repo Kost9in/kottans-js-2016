@@ -1,5 +1,11 @@
 @media (max-width: 1000px) {
 
+  /* page */
+
+  .section-title(@number) {
+    margin-bottom: 25px;
+  }
+
   /* header */
 
   .header {
@@ -17,6 +23,7 @@
     margin-bottom: 90px;
     .order-info-wrapper {
       display: block;
+      margin-bottom: 50px;
       .order-info {
         width: 100%;
         border-right: 0;
@@ -26,11 +33,39 @@
         width: 100%;
       }
     }
+    .what-to-translate {
+      margin-bottom: 50px;
+      .title {
+        padding: 0 5px 5px;
+        margin: 0 0 40px;
+        letter-spacing: 2px;
+        font-size: 18px;
+      }
+      ul li {
+        width: 28%;
+        .custom-radio {
+          padding: 20px 0;
+        }
+      }
+    }
+    .upload-documents {
+      width: 80%;
+      margin-bottom: 50px;
+      .title {
+        .section-title('1');
+      }
+      .upload-button {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+      .files-list table {
+        td:nth-child(3), th:nth-child(3) {
+          display: none;
+        }
+      }
+    }
   }
-
-
-
-
 
   /* footer */
 
@@ -47,6 +82,25 @@
 }
 
 @media (max-width: 700px) {
+
+  /* page */
+
+  .section-title(@number) {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    span {
+      display: block;
+      font-size: 12px;
+      margin-left: 0;
+    }
+    &:before {
+      left: 0px;
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    }
+  }
 
   /* header */
 
@@ -72,6 +126,7 @@
   .main {
     margin-bottom: 70px;
     .order-info-wrapper {
+      margin-bottom: 40px;
       .order-info {
         display: block;
         .your-order {
@@ -83,10 +138,61 @@
         }
       }
     }
+    .what-to-translate {
+      margin-bottom: 40px;
+      .title {
+        margin: 0 0 20px;
+        letter-spacing: 1px;
+        font-size: 16px;
+      }
+      ul li {
+        width: 28%;
+        .custom-radio {
+          padding: 10px 0;
+          span {
+            font-size: 14px;
+          }
+          .checked-label {
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+          }
+          &:before {
+            top: -3px;
+            left: -3px;
+            border: 3px solid #76a7e1;
+          }
+        }
+      }
+    }
+    .upload-documents {
+      width: 90%;
+      margin-bottom: 40px;
+      .title {
+        .section-title('1');
+      }
+      .upload-button {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      .files-list table {
+        td:nth-child(2), th:nth-child(2) {
+          display: none;
+        }
+        th {
+          padding: 15px 0;
+          font-size: 14px;
+          letter-spacing: 0;
+        }
+        td {
+          padding: 10px 0;
+          font-size: 14px;
+        }
+      }
+    }
   }
-
-
-
 
   /* footer */
 
@@ -107,6 +213,12 @@
 }
 
 @media (max-width: 500px) {
+
+  /* page */
+
+  .section-title(@number) {
+    font-size: 16px;
+  }
 
   /* header */
 
@@ -132,6 +244,7 @@
   .main {
     margin-bottom: 50px;
     .order-info-wrapper {
+      margin-bottom: 30px;
       .order-info {
         .your-order {
           margin-bottom: 20px;
@@ -154,6 +267,44 @@
               }
             }
           }
+        }
+      }
+    }
+    .what-to-translate {
+      margin-bottom: 30px;
+      .title {
+        margin: 0 0 20px;
+        border-bottom: 0;
+        padding: 0 5%;
+      }
+      ul {
+        display: block;
+        li {
+          width: 80%;
+          margin: 0 auto 10px;
+          .custom-radio {
+            padding: 15px 0;
+            img {
+              max-width: 50px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .upload-documents {
+      margin-bottom: 30px;
+      .title {
+        .section-title('1');
+      }
+      .files-list table {
+        th {
+          padding: 10px 0;
+          font-size: 12px;
+        }
+        td {
+          padding: 5px 0;
+          font-size: 12px;
         }
       }
     }

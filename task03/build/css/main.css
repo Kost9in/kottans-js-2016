@@ -2198,7 +2198,7 @@
   overflow: visible;
   clip: auto;
 }
-/* main */
+/* page */
 * {
   margin: 0;
   padding: 0;
@@ -2210,6 +2210,7 @@ ul {
 body {
   background: #eceef4;
   font-family: Arial;
+  color: #6e768f;
 }
 a {
   color: #6e768f;
@@ -2290,6 +2291,8 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 85px;
+  border-bottom: 2px solid #c9d0e1;
 }
 .main .order-info-wrapper .order-info {
   display: -webkit-flex;
@@ -2315,7 +2318,6 @@ a:hover {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e768f;
   margin-bottom: 25px;
 }
 .main .order-info-wrapper .order-info .your-order .title i {
@@ -2392,7 +2394,6 @@ a:hover {
 }
 .main .order-info-wrapper .contacts .icon {
   padding-right: 5%;
-  color: #6e768f;
   font-size: 28px;
 }
 .main .order-info-wrapper .contacts .info {
@@ -2401,7 +2402,6 @@ a:hover {
 .main .order-info-wrapper .contacts .info .title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e768f;
   margin-bottom: 12px;
 }
 .main .order-info-wrapper .contacts .info .text {
@@ -2416,6 +2416,201 @@ a:hover {
 }
 .main .order-info-wrapper .contacts .info .links a:hover {
   text-decoration: underline;
+}
+.main .what-to-translate {
+  margin-bottom: 85px;
+  text-align: center;
+}
+.main .what-to-translate .title {
+  display: inline-block;
+  padding: 0 10px 10px;
+  margin: 0 0 60px;
+  border-bottom: 2px solid #d7d8e0;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+.main .what-to-translate ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .what-to-translate ul li {
+  width: 24%;
+  margin: 0 1.5%;
+}
+.main .what-to-translate ul li .custom-radio {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  border: 2px solid #d7d9e0;
+  border-radius: 5px;
+  background: #f7f7fa;
+  color: #9098b8;
+  text-decoration: none;
+}
+.main .what-to-translate ul li .custom-radio input {
+  display: none;
+}
+.main .what-to-translate ul li .custom-radio img {
+  display: block;
+  width: 35%;
+  margin: 0 auto 17px;
+  transition: .3s;
+}
+.main .what-to-translate ul li .custom-radio span {
+  letter-spacing: 1px;
+}
+.main .what-to-translate ul li .custom-radio .checked-label {
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-transform: translateX(50%) translateY(-50%);
+      -ms-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  opacity: 0;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 27px;
+  height: 27px;
+  background: #76a7e1;
+  color: #fff;
+  transition: .3s;
+}
+.main .what-to-translate ul li .custom-radio:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.main .what-to-translate ul li .custom-radio:before {
+  opacity: 0;
+  position: absolute;
+  content: '';
+  top: -6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  border: 6px solid #76a7e1;
+  border-radius: 5px;
+  transition: .3s;
+}
+.main .what-to-translate ul li .custom-radio.checked:before,
+.main .what-to-translate ul li .custom-radio.checked .checked-label {
+  opacity: 1;
+}
+.main .upload-documents {
+  width: 78%;
+  margin: 0 auto 85px;
+}
+.main .upload-documents .title {
+  position: relative;
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.main .upload-documents .title span {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #9fa5b8;
+  margin-left: 10px;
+}
+.main .upload-documents .title:before {
+  content: '1';
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: -56px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6e768f;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 14px;
+}
+.main .upload-documents .upload-button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 35px;
+  border: 2px solid #d7d9e0;
+  border-radius: 5px;
+  background: #f7f7fa;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9098b8;
+}
+.main .upload-documents .upload-button i {
+  margin-right: 10px;
+}
+.main .upload-documents .upload-button:hover {
+  background: #9098b8;
+  color: #f7f7fa;
+}
+.main .upload-documents .files-list {
+  padding: 8px 5%;
+  border: 2px solid #e6e8ee;
+  border-radius: 5px;
+  color: #a5abc5;
+}
+.main .upload-documents .files-list table {
+  width: 100%;
+}
+.main .upload-documents .files-list table th,
+.main .upload-documents .files-list table td {
+  text-align: left;
+  vertical-align: middle;
+}
+.main .upload-documents .files-list table th:last-child,
+.main .upload-documents .files-list table td:last-child {
+  text-align: center;
+}
+.main .upload-documents .files-list table th {
+  padding: 20px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.main .upload-documents .files-list table td {
+  padding: 15px 0;
+  font-size: 15px;
+}
+.main .upload-documents .files-list table .remove {
+  font-size: 18px;
+}
+.main .upload-documents .files-list table .remove i {
+  transition: .3s;
+}
+.main .upload-documents .files-list table .remove:hover i {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /* footer */
 .footer {
@@ -2515,6 +2710,7 @@ a:hover {
           transform: rotate(-90deg);
 }
 @media (max-width: 1000px) {
+  /* page */
   /* header */
   .header {
     padding: 40px 0;
@@ -2528,6 +2724,7 @@ a:hover {
   }
   .main .order-info-wrapper {
     display: block;
+    margin-bottom: 50px;
   }
   .main .order-info-wrapper .order-info {
     width: 100%;
@@ -2536,6 +2733,37 @@ a:hover {
   }
   .main .order-info-wrapper .contacts {
     width: 100%;
+  }
+  .main .what-to-translate {
+    margin-bottom: 50px;
+  }
+  .main .what-to-translate .title {
+    padding: 0 5px 5px;
+    margin: 0 0 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  .main .what-to-translate ul li {
+    width: 28%;
+  }
+  .main .what-to-translate ul li .custom-radio {
+    padding: 20px 0;
+  }
+  .main .upload-documents {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .main .upload-documents .title {
+    margin-bottom: 25px;
+  }
+  .main .upload-documents .upload-button {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .main .upload-documents .files-list table td:nth-child(3),
+  .main .upload-documents .files-list table th:nth-child(3) {
+    display: none;
   }
   /* footer */
   .footer {
@@ -2551,6 +2779,7 @@ a:hover {
   }
 }
 @media (max-width: 700px) {
+  /* page */
   /* header */
   .header {
     padding: 30px 0;
@@ -2572,6 +2801,9 @@ a:hover {
   .main {
     margin-bottom: 70px;
   }
+  .main .order-info-wrapper {
+    margin-bottom: 40px;
+  }
   .main .order-info-wrapper .order-info {
     display: block;
   }
@@ -2581,6 +2813,72 @@ a:hover {
   }
   .main .order-info-wrapper .order-info .order-actions {
     width: 100%;
+  }
+  .main .what-to-translate {
+    margin-bottom: 40px;
+  }
+  .main .what-to-translate .title {
+    margin: 0 0 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .main .what-to-translate ul li {
+    width: 28%;
+  }
+  .main .what-to-translate ul li .custom-radio {
+    padding: 10px 0;
+  }
+  .main .what-to-translate ul li .custom-radio span {
+    font-size: 14px;
+  }
+  .main .what-to-translate ul li .custom-radio .checked-label {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+  .main .what-to-translate ul li .custom-radio:before {
+    top: -3px;
+    left: -3px;
+    border: 3px solid #76a7e1;
+  }
+  .main .upload-documents {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .main .upload-documents .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 35px;
+  }
+  .main .upload-documents .title span {
+    display: block;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .main .upload-documents .title:before {
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .main .upload-documents .upload-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .main .upload-documents .files-list table td:nth-child(2),
+  .main .upload-documents .files-list table th:nth-child(2) {
+    display: none;
+  }
+  .main .upload-documents .files-list table th {
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .main .upload-documents .files-list table td {
+    padding: 10px 0;
+    font-size: 14px;
   }
   /* footer */
   .footer {
@@ -2600,6 +2898,7 @@ a:hover {
   }
 }
 @media (max-width: 500px) {
+  /* page */
   /* header */
   .header {
     padding: 20px 0;
@@ -2620,6 +2919,9 @@ a:hover {
   /* main */
   .main {
     margin-bottom: 50px;
+  }
+  .main .order-info-wrapper {
+    margin-bottom: 30px;
   }
   .main .order-info-wrapper .order-info .your-order {
     margin-bottom: 20px;
@@ -2642,5 +2944,41 @@ a:hover {
   }
   .main .order-info-wrapper .order-info .your-order ul li .head {
     margin-bottom: 2px;
+  }
+  .main .what-to-translate {
+    margin-bottom: 30px;
+  }
+  .main .what-to-translate .title {
+    margin: 0 0 20px;
+    border-bottom: 0;
+    padding: 0 5%;
+  }
+  .main .what-to-translate ul {
+    display: block;
+  }
+  .main .what-to-translate ul li {
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+  .main .what-to-translate ul li .custom-radio {
+    padding: 15px 0;
+  }
+  .main .what-to-translate ul li .custom-radio img {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+  .main .upload-documents {
+    margin-bottom: 30px;
+  }
+  .main .upload-documents .title {
+    font-size: 16px;
+  }
+  .main .upload-documents .files-list table th {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .main .upload-documents .files-list table td {
+    padding: 5px 0;
+    font-size: 12px;
   }
 }
