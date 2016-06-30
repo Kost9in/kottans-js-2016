@@ -53,9 +53,13 @@ test('Unknown amount of numbers width custom delimeter : and number bigger 1000'
   t.is(add('//:\n2:4:1000:1001:7:10'), 1023);
 });
 
+test('Unknown amount of numbers width custom delimeter ***', t => {
+  t.is(add('//[***]\n2***4***7***10'), 23);
+});
 
-
-
+test('Unknown amount of numbers width many custom delimeters', t => {
+  t.is(add('//[***][///][%]\n2***4///7%10'), 23);
+});
 
 
 
