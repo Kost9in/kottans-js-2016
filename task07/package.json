@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod": "NODE_ENV=production nodemon index.js",
+    "dev": "NODE_ENV=dev nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.21.0",
+    "js-yaml": "^3.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
